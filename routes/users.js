@@ -10,19 +10,19 @@ router.get('/', function (req, res, next) {
 router.get('/:id', async function (req, res, next) {
 
   try {
-    const links = await query(
-      'SELECT * FROM links WHERE id = ?',
+    const story = await query(
+      'SELECT * FROM story WHERE id= ?',
       req.params.id
     );
 
-    const story = await query(
-      'SELECT * FROM story WHERE links_id = ?',
+    const links = await query(
+      'SELECT * FROM links WHERE story_id = ?',
       req.params.id
     );
 
     res.json({
       status: 200,
-      user: user,
+      links: links,
       story: story
     });
 
