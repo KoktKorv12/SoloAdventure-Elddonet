@@ -20,7 +20,7 @@ router.get('/:id', async function (req, res, next) {
       req.params.id
     );
 
-    res.json({
+    res.render('story', {
       status: 200,
       links: links,
       story: story
