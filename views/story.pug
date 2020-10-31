@@ -3,6 +3,8 @@ extends layout
 block content
 
   p= story[0].body
-
+  
+  div.links
     each link in links
       a(href=link.target_id)= link.description 
+

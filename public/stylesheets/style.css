@@ -1,12 +1,36 @@
 body {
   padding: 50px;
-  font-family: anisette-std, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  background: #272727; }
 
 a {
-  color: #00B7FF;
-}
+  color: white;
+  margin: 20px;
+  font-family: Poppins;
+  font-weight: 800; }
+
+.frontpage-title {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 100px;
+  color: white; }
+
+p {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 20px;
+  color: white; }
+
+.links {
+  padding: 20px;
+  display: flex;
+  justify-content: center; }
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
